@@ -4,11 +4,11 @@
 import ibm_db
 
 # Replace the connection parameters with your values
-db_location = "MOPDBB0"
-db_host = "zt01.pssc.mop.fr.ibm.com"
-db_port = 4751
-db_uid = "mzrobek"
-db_pwd = "wj1030j"
+db_location = "<db2 location>"
+db_host = "<db host>"
+db_port = 99999
+db_uid = "<userid>"
+db_pwd = "<password>"
 
 conn_str =  "DATABASE=" + db_location + ";HOSTNAME=" + db_host +";PORT=" + str(db_port) + ";"\
             "PROTOCOL=TCPIP;UID=" + db_uid + ";PWD=" + db_pwd + ";"
