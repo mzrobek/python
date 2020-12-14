@@ -1,5 +1,6 @@
 # A sample program which connects to a Db2 for z/OS database
 # using ODBC and executes a SELECT
+# Written by Maciej Zrobek
 
 import ibm_db
 

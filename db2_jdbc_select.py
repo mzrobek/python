@@ -1,3 +1,11 @@
+# A sample program which connects to a Db2 for z/OS database
+# using ODBC and executes a SELECT
+# Written by Maciej Zrobek
+
+### IMPORTANT:
+### Before running this script make sure that the complete path to the
+### license file db2jcc_license_cisuz.jar is in your CLASSPATH env variable
+
 import jaydebeapi
 import os
 
@@ -10,7 +18,10 @@ db_port = 99999
 db_uid = "<userid>"
 db_pwd = "<password>"
 
-jdbc_driver_path = "/Applications/dsdriver/java/db2jcc4.jar"
+# Replace with the complete path to the driver file
+# This parameter is not required if the path is in your CLASSPATH
+jdbc_driver_path = "<path to db2jcc4.jar>"
+
 jdbc_driver_class = "com.ibm.db2.jcc.DB2Driver"
 jdbc_conn_str = "jdbc:db2://" + db_host + ":" + str(db_port) + "/" + db_location + ":"
 
